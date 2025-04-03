@@ -17,7 +17,7 @@ const DatabaseInfo = () => {
         <div className="bg-gradient-to-r from-quiz-primary to-quiz-accent text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <Database className="h-16 w-16 mx-auto mb-4" />
-            <h1 className="text-3xl font-bold mb-4">Database Options for QuizHive</h1>
+            <h1 className="text-3xl font-bold mb-4">Database Options for Quizophile</h1>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Explore database solutions to power your quiz application with user authentication and quiz storage
             </p>
@@ -31,7 +31,7 @@ const DatabaseInfo = () => {
             <h2 className="text-2xl font-bold mb-4">Why You Need a Database</h2>
             <p className="text-gray-700 mb-6">
               A robust database solution is essential for storing user accounts, quiz data, scores, and managing the overall functionality of your quiz application. 
-              Here are some recommended options for implementing database functionality in QuizHive.
+              Here are some recommended options for implementing database functionality in Quizophile.
             </p>
           </div>
           
