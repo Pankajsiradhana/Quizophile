@@ -13,6 +13,11 @@ import Explore from "./pages/Explore";
 import Category from "./pages/Category";
 import Create from "./pages/Create";
 import CreateQuiz from "./pages/CreateQuiz";
+import Profile from "./pages/Profile";
+import Settings from "./pages/Settings";
+import Community from "./pages/Community";
+import Topics from "./pages/Topics";
+import Logout from "./pages/Logout";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +36,11 @@ const App = () => (
           <Route path="/category/:id" element={<Category />} />
           <Route path="/create" element={<Create />} />
           <Route path="/create/quiz" element={<CreateQuiz />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/topics" element={<Topics />} />
+          <Route path="/logout" element={<Logout />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
