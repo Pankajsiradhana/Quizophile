@@ -34,8 +34,8 @@ const Community = () => {
         username: "michaelc",
         avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80"
       },
-      title: "Using QuizHive for Remote Learning: A Teacher's Experience",
-      content: "When the pandemic hit, I had to quickly adapt my teaching methods. QuizHive became an essential tool in my virtual classroom. Here's how I used it to keep my students engaged and assess their understanding...",
+      title: "Using quizophile for Remote Learning: A Teacher's Experience",
+      content: "When the pandemic hit, I had to quickly adapt my teaching methods. Quizophile became an essential tool in my virtual classroom. Here's how I used it to keep my students engaged and assess their understanding...",
       topic: "Teaching",
       likes: 89,
       comments: 17,
@@ -49,7 +49,7 @@ const Community = () => {
         avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80"
       },
       title: "How I Improved Student Test Scores with Weekly Quizzes",
-      content: "Regular assessment is key to student success. By implementing weekly quizzes through QuizHive, I saw a 15% improvement in final exam scores. Here's my approach and the data to back it up...",
+      content: "Regular assessment is key to student success. By implementing weekly quizzes through Qizophile, I saw a 15% improvement in final exam scores. Here's my approach and the data to back it up...",
       topic: "Assessment",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
       likes: 156,
@@ -69,7 +69,7 @@ const Community = () => {
     },
     {
       id: 2,
-      title: "How to use QuizHive for language assessment?",
+      title: "How to use Quizophile for language assessment?",
       author: "LinguistPro",
       replies: 18,
       lastActive: "1 day ago"
