@@ -6,7 +6,7 @@ import FeaturesSection from '@/components/FeaturesSection';
 import Footer from '@/components/Footer';
 import QuizCard, { QuizCardProps } from '@/components/QuizCard';
 import CategoryCard from '@/components/CategoryCard';
-import { BookOpen, Calculator, Flask, Globe, Music, BookOpenText } from 'lucide-react';
+import { BookOpen, Calculator, Beaker, Globe, Music, BookOpenText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -68,7 +68,7 @@ const Index = () => {
       id: '2',
       name: 'Science',
       description: 'Physics, Chemistry, Biology and Earth Sciences',
-      icon: <Flask className="h-6 w-6" />,
+      icon: <Beaker className="h-6 w-6" />,
       count: 142,
     },
     {
