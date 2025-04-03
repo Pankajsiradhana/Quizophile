@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const HeroSection = () => {
   return (
@@ -34,27 +35,14 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute top-0 left-0 w-72 h-72 bg-white/5 rounded-full filter blur-3xl"></div>
               <div className="absolute bottom-0 right-0 w-72 h-72 bg-white/10 rounded-full filter blur-3xl"></div>
-              <div className="relative z-10 grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 animate-float shadow-lg">
-                    <h3 className="font-semibold">Create</h3>
-                    <p className="text-sm mt-1 text-white/80">Build quizzes for any subject</p>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 animate-float shadow-lg animation-delay-300">
-                    <h3 className="font-semibold">Practice</h3>
-                    <p className="text-sm mt-1 text-white/80">Test your knowledge</p>
-                  </div>
-                </div>
-                <div className="space-y-4 mt-8">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 animate-float shadow-lg animation-delay-150">
-                    <h3 className="font-semibold">Share</h3>
-                    <p className="text-sm mt-1 text-white/80">Distribute to students</p>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 animate-float shadow-lg animation-delay-450">
-                    <h3 className="font-semibold">Collaborate</h3>
-                    <p className="text-sm mt-1 text-white/80">Work with educators</p>
-                  </div>
-                </div>
+              <div className="relative z-10 rounded-xl overflow-hidden shadow-xl">
+                <AspectRatio ratio={4/3}>
+                  <img 
+                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+                    alt="Student using laptop for online learning" 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
               </div>
             </div>
           </div>

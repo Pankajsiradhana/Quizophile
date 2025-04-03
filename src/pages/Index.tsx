@@ -9,6 +9,14 @@ import CategoryCard from '@/components/CategoryCard';
 import { BookOpen, Calculator, Beaker, Globe, Music, BookOpenText, Database } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Index = () => {
   // Mock data for popular quizzes
@@ -130,6 +138,70 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* Featured Quiz Carousel */}
+        <section className="py-8 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Content</h2>
+            <Carousel className="w-full max-w-5xl mx-auto">
+              <CarouselContent>
+                <CarouselItem className="md:basis-1/2">
+                  <div className="p-1">
+                    <div className="overflow-hidden rounded-xl">
+                      <AspectRatio ratio={16/9}>
+                        <img 
+                          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+                          alt="Computer with code" 
+                          className="w-full h-full object-cover transition-all hover:scale-105"
+                        />
+                      </AspectRatio>
+                      <div className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Programming Fundamentals</h3>
+                        <p className="text-muted-foreground">Learn the basics of coding with interactive quizzes</p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2">
+                  <div className="p-1">
+                    <div className="overflow-hidden rounded-xl">
+                      <AspectRatio ratio={16/9}>
+                        <img 
+                          src="https://images.unsplash.com/photo-1721322800607-8c38375eef04" 
+                          alt="Study environment" 
+                          className="w-full h-full object-cover transition-all hover:scale-105"
+                        />
+                      </AspectRatio>
+                      <div className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Study Environment Setup</h3>
+                        <p className="text-muted-foreground">Create the perfect space for focused learning</p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2">
+                  <div className="p-1">
+                    <div className="overflow-hidden rounded-xl">
+                      <AspectRatio ratio={16/9}>
+                        <img 
+                          src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
+                          alt="Student using laptop" 
+                          className="w-full h-full object-cover transition-all hover:scale-105"
+                        />
+                      </AspectRatio>
+                      <div className="p-4 bg-white">
+                        <h3 className="font-semibold text-lg">Remote Learning Guide</h3>
+                        <p className="text-muted-foreground">Tips and tricks for effective online education</p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-1" />
+              <CarouselNext className="right-1" />
+            </Carousel>
+          </div>
+        </section>
         
         {/* Categories Section */}
         <section className="py-16 bg-gray-50">
@@ -154,19 +226,34 @@ const Index = () => {
         {/* Features Section */}
         <FeaturesSection />
         
-        {/* Database Section */}
+        {/* Database Section with Image */}
         <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 text-center">
-            <Database className="h-12 w-12 mx-auto text-quiz-primary mb-4" />
-            <h2 className="text-2xl font-bold mb-4">Need to Store User Data?</h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Learn about database options for storing user login details, created quizzes, and tracking progress.
-            </p>
-            <Link to="/database-info">
-              <Button className="bg-quiz-primary hover:bg-quiz-accent">
-                Explore Database Solutions
-              </Button>
-            </Link>
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="order-2 md:order-1">
+                <Database className="h-12 w-12 text-quiz-primary mb-4" />
+                <h2 className="text-2xl font-bold mb-4">Need to Store User Data?</h2>
+                <p className="text-lg text-gray-600 mb-8">
+                  Learn about database options for storing user login details, created quizzes, and tracking progress.
+                </p>
+                <Link to="/database-info">
+                  <Button className="bg-quiz-primary hover:bg-quiz-accent">
+                    Explore Database Solutions
+                  </Button>
+                </Link>
+              </div>
+              <div className="order-1 md:order-2">
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <AspectRatio ratio={16/9}>
+                    <img 
+                      src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+                      alt="Database visualization" 
+                      className="w-full h-full object-cover"
+                    />
+                  </AspectRatio>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         
