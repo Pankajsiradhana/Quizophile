@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center">
               <BookOpen className="h-8 w-8 text-quiz-primary" />
-              <span className="text-xl font-bold ml-2 text-quiz-dark">QuizHive</span>
+              <span className="text-xl font-bold ml-2 text-quiz-dark">Quizophile</span>
             </Link>
             <p className="mt-3 text-gray-600 text-sm">
               An open-source platform for creating, sharing, and taking educational quizzes.
@@ -120,7 +120,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-200 mt-8 pt-8">
           <p className="text-gray-500 text-sm text-center">
-            © {new Date().getFullYear()} QuizHive. All rights reserved.
+            © {new Date().getFullYear()} Quezophile. All rights reserved.
           </p>
         </div>
       </div>
