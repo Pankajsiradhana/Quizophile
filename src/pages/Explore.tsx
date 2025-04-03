@@ -181,7 +181,7 @@ const Explore = () => {
               <div className="lg:w-1/2 p-8 flex flex-col justify-center">
                 <h2 className="text-2xl font-bold mb-4">Learn Together, Grow Together</h2>
                 <p className="text-gray-600 mb-6">
-                  QuizHive is more than just a quiz platform. It's a community of learners and educators
+                  Quizophile is more than just a quiz platform. It's a community of learners and educators
                   sharing knowledge and helping each other grow. Create, share, and take quizzes on any subject
                   to enhance your learning experience.
                 </p>
