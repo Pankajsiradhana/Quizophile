@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Search, Menu, X, BookOpen, Bell } from 'lucide-react';
+import { Search, Menu, X, BookOpen, Bell, Plus } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { 
   DropdownMenu, 
@@ -57,6 +57,11 @@ const Navbar = ({ isLoggedIn, userName = "User" }: NavbarProps) => {
 
             {isLoggedIn ? (
               <>
+                <Link to="/create">
+                  <Button size="sm" className="bg-quiz-primary hover:bg-quiz-accent">
+                    <Plus className="h-4 w-4 mr-1" /> Create
+                  </Button>
+                </Link>
                 <Bell className="h-5 w-5 text-gray-500 cursor-pointer hover:text-quiz-primary" />
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
@@ -138,6 +143,9 @@ const Navbar = ({ isLoggedIn, userName = "User" }: NavbarProps) => {
 
             {isLoggedIn ? (
               <>
+                <Link to="/create" className="block text-gray-600 hover:text-quiz-primary px-3 py-2 rounded-md text-base font-medium">
+                  Create
+                </Link>
                 <Link to="/dashboard" className="block text-gray-600 hover:text-quiz-primary px-3 py-2 rounded-md text-base font-medium">
                   Dashboard
                 </Link>
