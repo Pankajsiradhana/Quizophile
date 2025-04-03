@@ -18,6 +18,9 @@ import Settings from "./pages/Settings";
 import Community from "./pages/Community";
 import Topics from "./pages/Topics";
 import Logout from "./pages/Logout";
+import QuizDetail from "./pages/QuizDetail";
+import Categories from "./pages/Categories";
+import DatabaseInfo from "./pages/DatabaseInfo";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +37,7 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/category/:id" element={<Category />} />
+          <Route path="/categories" element={<Categories />} />
           <Route path="/create" element={<Create />} />
           <Route path="/create/quiz" element={<CreateQuiz />} />
           <Route path="/profile" element={<Profile />} />
@@ -41,6 +45,8 @@ const App = () => (
           <Route path="/community" element={<Community />} />
           <Route path="/topics" element={<Topics />} />
           <Route path="/logout" element={<Logout />} />
+          <Route path="/quiz/:id" element={<QuizDetail />} />
+          <Route path="/database-info" element={<DatabaseInfo />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

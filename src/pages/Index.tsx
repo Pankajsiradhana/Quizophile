@@ -6,7 +6,7 @@ import FeaturesSection from '@/components/FeaturesSection';
 import Footer from '@/components/Footer';
 import QuizCard, { QuizCardProps } from '@/components/QuizCard';
 import CategoryCard from '@/components/CategoryCard';
-import { BookOpen, Calculator, Beaker, Globe, Music, BookOpenText } from 'lucide-react';
+import { BookOpen, Calculator, Beaker, Globe, Music, BookOpenText, Database } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -123,7 +123,9 @@ const Index = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {popularQuizzes.map((quiz) => (
-                <QuizCard key={quiz.id} {...quiz} />
+                <Link to={`/quiz/${quiz.id}`} key={quiz.id} className="no-underline">
+                  <QuizCard {...quiz} />
+                </Link>
               ))}
             </div>
           </div>
@@ -141,7 +143,9 @@ const Index = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {categories.map((category) => (
-                <CategoryCard key={category.id} {...category} />
+                <Link to={`/category/${category.id}`} key={category.id} className="no-underline">
+                  <CategoryCard {...category} />
+                </Link>
               ))}
             </div>
           </div>
@@ -149,6 +153,22 @@ const Index = () => {
         
         {/* Features Section */}
         <FeaturesSection />
+        
+        {/* Database Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 text-center">
+            <Database className="h-12 w-12 mx-auto text-quiz-primary mb-4" />
+            <h2 className="text-2xl font-bold mb-4">Need to Store User Data?</h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+              Learn about database options for storing user login details, created quizzes, and tracking progress.
+            </p>
+            <Link to="/database-info">
+              <Button className="bg-quiz-primary hover:bg-quiz-accent">
+                Explore Database Solutions
+              </Button>
+            </Link>
+          </div>
+        </section>
         
         {/* Call to Action Section */}
         <section className="py-16 bg-gradient-to-r from-quiz-primary to-quiz-accent text-white">
