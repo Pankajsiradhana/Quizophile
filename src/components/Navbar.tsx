@@ -30,7 +30,7 @@ const Navbar = ({ isLoggedIn, userName = "User" }: NavbarProps) => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <BookOpen className="h-8 w-8 text-quiz-primary" />
-              <span className="text-xl font-bold ml-2 text-quiz-dark">QuizHive</span>
+              <span className="text-xl font-bold ml-2 text-quiz-dark">Quizophile</span>
             </Link>
           </div>
 
